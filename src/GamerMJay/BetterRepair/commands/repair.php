@@ -19,22 +19,22 @@ class repair extends command {
 	}
 	
 	public function execute(CommandSender $s, string $label, array $args) {
-		if(!$s instanceof Player) {		$sender->sendMessage($config->get("run-ingame"))
-			return false;
+		if(!$sender instanceof Player) {		$sender->sendMessage($config->get("run-ingame"))
+	              return false;
 		}
 		if(!$sender->hasPermission("repair.use")) {
 			$sender->sendMessage($config->get("no-permission"));;
-			return false;
+		      return false;
 		}
 		               $item = $sender->getInventory()->getItemInHand();
                 if ($item->isNull()) {
                     $sender->sendMessage($config->get("reapir.noitem"));
-                    return false;
+                      return false;
                 }
 
-		$item = $s->getInventory()->getItemInHand();
+		$item = $sender->getInventory()->getItemInHand();
 		$item->setDamage(0);
-		$s->getInventory()->setItemInHand($item);
-		$s->sendMessage($this->plugin->getConfig()->get("repair-message"));
+		$sender->getInventory()->setItemInHand($item);
+		$sender->sendMessage($this->plugin->getConfig()->get("repair-message"));
 	}
 }
