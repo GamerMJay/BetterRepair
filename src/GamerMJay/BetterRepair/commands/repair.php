@@ -20,11 +20,11 @@ class repair extends command {
 	
 	public function execute(CommandSender $s, string $label, array $args) {
 		if(!$s instanceof Player) {		$sender->sendMessage($config->get("run-ingame"))
-			return true;
+			return false;
 		}
 		if(!$sender->hasPermission("repair.use")) {
 			$sender->sendMessage($config->get("no-permission"));;
-			return true;
+			return false;
 		}
 		               $item = $sender->getInventory()->getItemInHand();
                 if ($item->isNull()) {
