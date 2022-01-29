@@ -1,6 +1,6 @@
 <?php
 
-namespace GamerMJay\BetterGameMode;
+namespace GamerMJay\BetterRepair;
 
 #pocketmine
 use GamerMJay\BetterRepair\commands\repair;
