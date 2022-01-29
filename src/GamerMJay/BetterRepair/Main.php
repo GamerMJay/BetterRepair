@@ -13,7 +13,8 @@ use pocketmine\utils\TextFormat;
 use pocketmine\Server;
 use pocketmine\player\Player;
 
-class Main extends PluginBase {
+class Main extends PluginBase 
+{
     public $config;
 
     public function onEnable(): void {
