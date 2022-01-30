@@ -7,6 +7,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Server;
 use pocketmine\player\Player;
+use pocketmine\utils\Config;
 use GamerMJay\BetterRepair\Main;
 
 class repair extends command {
@@ -18,23 +19,25 @@ class repair extends command {
 		parent::__construct($this->plugin->getConfig()->get("command"), $this->plugin->getConfig()->get("description"), "/repair", [""]);
 	}
 	
-	public function execute(CommandSender $s, string $label, array $args) {
-		if(!$sender instanceof Player) { 
-                       $sender->sendMessage($config->get("run-ingame"));
+	public function execute(CommandSender $player, string $label, array $args) {
+		$config = $this->plugin->getConfig(); 
+		if(!$player instanceof Player){
+			$player->sendMessage($config->get("run-ingame"));
+			return false;
 		}
-		if(!$sender->hasPermission("repair.use")) {
-			$sender->sendMessage($config->get("no-permission"));
+		if(!$player->hasPermission("repair.use")) {
+			$player->sendMessage($config->get("no-permission"));
 		      return false;
 		}
-		               $item = $sender->getInventory()->getItemInHand();
-                if ($item->isNull()) {
-                    $sender->sendMessage($config->get("repair.noitem"));
-                      return false;
-                }
+		$item = $player->getInventory()->getItemInHand();
+		if ($item->isNull()) {
+			$player->sendMessage($config->get("repair-noitem"));
+			return false;
+		}
 
-		$item = $sender->getInventory()->getItemInHand();
+		$item = $player->getInventory()->getItemInHand();
                 $item->setDamage(0);
-		$sender->getInventory()->setItemInHand($item);
-		$sender->sendMessage($this->plugin->getConfig()->get("repair-message"));
+		$player->getInventory()->setItemInHand($item);
+		$player->sendMessage($this->plugin->getConfig()->get("repair-succes"));
 	}
-}
+ }
