@@ -28,7 +28,7 @@ class repair extends command {
 		}
 		               $item = $sender->getInventory()->getItemInHand();
                 if ($item->isNull()) {
-                    $sender->sendMessage($config->get("reapir.noitem"));
+                    $sender->sendMessage($config->get("repair.noitem"));
                       return false;
                 }
 
