@@ -34,7 +34,6 @@ class repair extends command {
 
 		$item = $sender->getInventory()->getItemInHand();
                 $item->setDamage(0);
-                $sender->getInventory()->setItemInHand($item);;
 		$sender->getInventory()->setItemInHand($item);
 		$sender->sendMessage($this->plugin->getConfig()->get("repair-message"));
 	}
