@@ -2,7 +2,7 @@
 
 
 # Messages
-description: Repair your Item
+description: "Repair your Item"
 no-permission: "§6§lBetterRepair §r§8» §cyou have no permission!"
 run-ingame: "§6§lBetterRepair §r§8» §crun this command ingame!"
 repair-succes: "§6§lBetterRepair §r§8» §aYour item has been repaired"
