@@ -38,7 +38,7 @@ class repair extends command {
             return false;
         }
         if(!$item instanceof Tool && !$item instanceof Armor){
-           $player->sendMessage($config->get("instaceof"));
+           $player->sendMessage($config->get("instanceof"));
             return false;
         }
 
