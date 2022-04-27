@@ -2,8 +2,6 @@
 # BetterRepair - V1.0.0  
 
 #### New
-
-### TODOs
 /repairall
 
 ### Report Bug
@@ -16,14 +14,14 @@ You've found a Bug?
 |**Command**|**Description**|
 |-----------|---------------|
 |`/repair`|Repair your Item in your Hand|
-
+|`/repairall`|repairAllCommand|
 ### License:
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay2008!
 
 ### Helpers:
 Owner: GamerMJay (https://github.com/GamerMJay)
 
-Helper: ()
+Helper: (r3pt1s Thanks for /repairall)
 
 Icon: ()
 
