@@ -10,3 +10,5 @@ website: https://github.com/GamerMJay/BetterRepair
 permissions:
   repair.use:
     default: op
+      betterrepair.repair.all:
+    default: op
