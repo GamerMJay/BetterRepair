@@ -1,15 +1,19 @@
-# BetterRepair V1.0.0 by GamerMJay, licensed under Apache License 2.0!
+# BetterRepair V1.1.0 by GamerMJay, licensed under Apache License 2.0
+#######
 
+# repair
+  repair: "repair"
+  repair-description: "Repair your Item in your Hand"
+  noPermission: "§6§lBetterRepair §r§8» §You don't have permission."
+  repair-noitem: "§6§lBetterRepair §r§8» §cYou have no item in your Hand!"
+  instanceof: "§6§lBetterRepair §r§8» §cYou cannot repair this item"
+  repair-succes: "§6§lBetterRepair §r§8» §aYou have been repaired."
+  
+# repairall
+  repair-all: "repairall"
+  repair-all-description: "Repairs all your items"
+  noPermission: "§6§lBetterRepair §r§8» §cYou don't have permission."
+  repair-all-message: "§6§lBetterRepair §r§8» §aAll items in your inventory has been repaired!"
 
-# Messages
-command: "repair"
-description: "Repair your Item in your Hand"
-command-repair-all: "repairAllCommand"
-description-repair-all: "Repairs all your items"
-permission-repair-all: "betterrepair.repair.all"
-instanceof: "§6§lBetterRepair §r§8» §cYou cannot repair this item"
-no-permission: "§6§lBetterRepair §r§8» §cyou have no permission!"
-run-ingame: "§6§lBetterRepair §r§8» §crun this command ingame!"
-repair-succes: "§6§lBetterRepair §r§8» §aYour item has been repaired"
-repair-noitem: "§6§lBetterRepair §r§8» §cYou have no item in your Hand!"
-repair-all-success: "§6§lBetterRepair §r§8» §aAll items in your inventory has been repaired!"
+# run ingame
+  run-ingame: "§6§lBetterRepair §r§8» §crun this command ingame!"

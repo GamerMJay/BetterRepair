@@ -15,11 +15,11 @@ class RepairCommand extends Command {
     
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct($this->plugin->getConfig()->get("command"), $this->plugin->getConfig()->get("description"), "/repair", [""]);
+        parent::__construct($this->plugin->getConfig()->get("repair"), $this->plugin->getConfig()->get("repair-description"), "/repair", [""]);
+        $this->setPermission("repair.use");
     }
-    
     public function execute(CommandSender $player, string $label, array $args): bool {
-        $config = $this->plugin->getConfig(); 
+        $config = $this->plugin->getConfig();
         if(!$player instanceof Player){
             $player->sendMessage($config->get("run-ingame"));
             return false;
@@ -37,7 +37,7 @@ class RepairCommand extends Command {
         }
 
         if(!$item instanceof Tool && !$item instanceof Armor){
-           $player->sendMessage($config->get("instanceof"));
+            $player->sendMessage($config->get("instanceof"));
             return false;
         }
 

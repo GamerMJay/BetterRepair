@@ -1,8 +1,8 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# BetterRepair - V1.0.0  
+# BetterRepair - V1.1.0  
 
 #### New
-/repairall
+Updated to PM5
 
 ### Report Bug
 You've found a Bug?
@@ -16,12 +16,12 @@ You've found a Bug?
 |`/repair`|Repair your Item in your Hand|
 |`/repairall`|repairAllCommand|
 ### License:
-This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay2008!
+This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 
 ### Helpers:
-Owner: GamerMJay (https://github.com/GamerMJay)
+[GamerMJay](https://github.com/GamerMJay)
 
-Helper: (r3pt1s Thanks for /repairall)
+[r3pt1s](https://github.com/r3pt1s)
 
 Icon: ()
 
