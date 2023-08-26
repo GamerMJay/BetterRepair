@@ -25,4 +25,4 @@ This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 
 Icon: ()
 
-Discord-Tag: `GamerMJay#6158`
+Discord-Tag: `GamerMJay`
